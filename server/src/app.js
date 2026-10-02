@@ -1,5 +1,6 @@
 import express from "express";
-import cors from "cors"
+import cors from "cors";
+import { notFound, errorHandler } from "./middleware/errorHandler.js";
 
 const app = express()
 
@@ -20,7 +21,10 @@ import studenRoutes from "./routes/student.route.js"
 app.use('/api/students', studenRoutes)
 
 app.get('/', (req, res) => {
-  res.json({message: 'Studend API running'})
+  res.json({ message: 'Studend API running' })
 })
+
+app.use(notFound);
+app.use(errorHandler);
 
 export default app
