@@ -85,43 +85,41 @@ git clone https://github.com/Swati-Vishwa/student-management-system-2
 cd student-management-system-2
 ```
 
-## Environment Variables
-
-Create a `.env` file in the `server` directory with the following configuration:
-
-```env
-PORT=3000
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database_name
+### 2. Set up the backend
+```bash
+cd server
+npm install
 ```
 
-### 2. Backend Configuration
+Copy `.env.example` to `.env` and fill in your own values:
+```
+PORT=3000
+MONGODB_URI=your_mongodb_connection_string_here
+```
 
+Start the server:
 ```bash
-# Navigate to the server directory
-cd server
-
-# Install dependencies
-npm install
-
-# Start the development server
 npm run dev
 ```
+The API runs at `http://localhost:3000`.
 
-The backend will be available at `http://localhost:3000`
-
-### 3. Frontend Configuration
-
+### 3. Set up the frontend
+Open a second terminal:
 ```bash
-# Open a new terminal and navigate to the client directory
 cd client
-
-# Install dependencies
 npm install
-
-# Start the development server
-npm run start
 ```
-The frontend will be available at `http://localhost:5173`
+
+Copy `.env.example` to `.env`:
+```
+VITE_API_URL=http://localhost:3000/api/students
+```
+
+Start the app:
+```bash
+npm run dev
+```
+The app runs at `http://localhost:5173`.
 
 ---
 
