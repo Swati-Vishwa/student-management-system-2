@@ -39,19 +39,29 @@ The Student Management System provides educational institutions and administrato
 ## Project Structure
 
 ```
-full-stack-development-internship-tasks/
-└── student-management-system-2/
+ student-management-system-2/
     ├── client/                 # React frontend application
-    │   ├── src/
     │   ├── public/
+    │   ├── src/
+    |   |    ├── components/
+    |   |    ├── pages/
+    |   |    ├── services/
+    |   |    ├── App.jsx
+    |   |    └── main.jsx
     │   └── package.json
     └── server/                 # Node.js/Express backend
-        ├── models/             # Database models
-        ├── routes/             # API endpoints
-        ├── controllers/        # Business logic
-        ├── .env                # Environment variables
+        ├── public/   
+        ├── src/
+        |    ├── config/
+        |    ├── controllers/
+        |    ├── middleware/
+        |    ├── models/
+        |    ├── routes/
+        |    ├── utils/
+        |    ├── app.js
+        |    └── index.js
         └── package.json
-```
+``` 
 
 ---
 
