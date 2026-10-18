@@ -85,6 +85,15 @@ git clone https://github.com/Swati-Vishwa/student-management-system-2
 cd student-management-system-2
 ```
 
+## Environment Variables
+
+Create a `.env` file in the `server` directory with the following configuration:
+
+```env
+PORT=3000
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database_name
+```
+
 ### 2. Backend Configuration
 
 ```bash
@@ -94,18 +103,11 @@ cd server
 # Install dependencies
 npm install
 
-# Create a .env file in the server root with the following variables:
-cat > .env << EOF
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-NODE_ENV=development
-EOF
-
 # Start the development server
 npm run dev
 ```
 
-The backend will be available at `http://localhost:5000`
+The backend will be available at `http://localhost:3000`
 
 ### 3. Frontend Configuration
 
@@ -119,8 +121,7 @@ npm install
 # Start the development server
 npm run start
 ```
-
-The frontend will automatically open at `http://localhost:3000`
+The frontend will be available at `http://localhost:5173`
 
 ---
 
@@ -169,26 +170,13 @@ The frontend will automatically open at `http://localhost:3000`
 ```bash
 npm run dev      # Start development server with nodemon
 npm start        # Start production server
-npm test         # Run backend tests (if configured)
 ```
 
 ### Client
 
 ```bash
-npm start        # Launch development server
+npm run dev        # Launch development server
 npm run build    # Create production build
-npm test         # Run frontend tests (if configured)
-```
-
----
-
-## Environment Variables
-
-Create a `.env` file in the `server` directory with the following configuration:
-
-```env
-PORT=5000
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/database_name
 ```
 
 ---
@@ -212,7 +200,7 @@ Frontend Developer | Full-Stack Developer
 
 ## License
 
-This project is provided as part of the Full-Stack Development Internship program.
+© 2026 Swati Vishwakarma. All rights reserved. This repository is public for review and portfolio purposes.
 
 ---
 
