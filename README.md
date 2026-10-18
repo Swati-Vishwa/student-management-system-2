@@ -81,8 +81,8 @@ Before installing this project, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/full-stack-development-internship-tasks.git
-cd full-stack-development-internship-tasks/student-management-system-2
+git clone https://github.com/Swati-Vishwa/student-management-system-2
+cd student-management-system-2
 ```
 
 ### 2. Backend Configuration
